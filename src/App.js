@@ -96,7 +96,7 @@ createPagesFunction(JSON) {
   // FunctionCollection.push(alert("AboutPage") );
 
   // var TheFunc = iterateArray(FunctionCollection);
-
+ 
   // var FunctionStore = FunctionCollection;  //this.state["FunctionCollection"];
   // var SelectedFunc = FunctionStore["ContactPage"];
   // alert(FunctionCollection) 
@@ -325,6 +325,9 @@ toggle(modal) {
     this.setState({
       [modalNumber]: !this.state[modalNumber]
     });
+  }
+  else {
+    this.setState({ ["HideSearchBar"]: !this.state["HideSearchBar"] });
   }
 }
 
